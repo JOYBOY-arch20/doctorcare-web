@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+
+@theme {
+    --color-kindawhite: #DCE9E2;
+    --color-palegreen: #00856F;
+    --color-text: #495057;
+    --font-dmsans: 'DM Sans', sans-serif;
+    --color-bg2: #F7F9F9;
+    --color-beige: #FFFAF1;
+}
+
+@layer base {
+    body {
+        @apply font-dmsans bg-bg2;
+    }
+}
+
+
+@layer components {
+    .para {
+        @apply text-palegreen font-bold leading-normal tracking-[0.08em];
+    }
+
+    .sub {
+        @apply text-[14px] leading-normal text-text font-light;
+    }
+
+    .big {
+        @apply text-[40px] font-bold font-dmsans;
+    }
+
+    .btn {
+        @apply inline-flex items-center justify-center w-47.75 h-9.5 border-2 rounded-[40px] border-palegreen text-palegreen font-bold text-[14px];
+    }
+}
