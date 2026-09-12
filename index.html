@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoctorCare</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/63d0b7e26f.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="font-dmsans">
@@ -17,9 +18,19 @@
                 class="pt-6.75 pb-[27.71px] pr-0 md:pr-[250.36px] md:pl-[124.78px] md:pt-[29.91px] flex justify-between items-center">
                 <img src="./images/Logo (1).png" alt="Logo">
                 <!-- Mobile Menu Button -->
-                <button class="cursor-pointer md:hidden">
-                    <img src="./images/Icon.png" alt="Menu">
-                </button>
+                <div class="">
+                   <img id="menuBtn" src="./images/Icon.png" class="md:hidden cursor-pointer">
+                    <ul id="menuList" class="absolute  md:hidden  right-0   w-59 bg-white border shadow-lg rounded-md py-1 list-none z-50 hidden  border-[#DEDEDE] ">
+                       <li class=" text-center text-md  pb-3"><a class="flex gap-3 justify-center  font-bold" href="#"><i class="fa-solid fa-user" style="color: #00856F;"></i>Profile</a></li>
+                        
+                       <li class=" text-center text-md pb-3 "><a class="flex gap-3 justify-center font-bold" href="#"><i class="fa-solid fa-universal-access" style="color: #00856F;"></i>Accesability</a></li>
+
+                       <li class=" text-center text-md pb-3 "><a class="flex gap-3 justify-center font-bold" href="#"><i class="fa-solid fa-gear" style="color: #00856F;"></i>Settings</a></li>
+
+                       <li class="text-center text-md pb-3"><a class="flex gap-3 justify-center font-bold" href="#"><i class=" fa-solid fa-right-from-bracket" style="color: #00856F;"></i>Log out</a></li>
+                    </ul>
+                </div>
+                
             </div>
             <div class="hidden md:block">
                 <ul class="hidden md:flex gap-8 pt-6.25 text-palegreen font-regular text-[16px]">
@@ -236,5 +247,5 @@
     </section>
 
 </body>
-
+<script src="web.js"></script>
 </html>
